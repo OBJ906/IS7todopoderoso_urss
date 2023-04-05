@@ -5,6 +5,7 @@ ul{list-style-type:none;}
 h1{color:darkred;}
 h2{color:darkred;}
 p{color:white;}
+h3{color:white;}
 @media screen and (min-width:1024px){
     ul{
         display:flex;
@@ -143,7 +144,7 @@ p{color:white;}
 } 
 @media screen and (max-width:768px){
     .mbTextAling{text-align:center;}
-    .mbMain, .mbFooter{
+    .mbMain, .mbFooter, .mbHeader{
         display:flex;
         flex-direction:column;
         align-items:center;
