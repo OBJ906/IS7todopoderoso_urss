@@ -1,0 +1,234 @@
+a{text-decoration: none;}
+ul{list-style-type:none;}
+.bgGrey{background-color: lightgrey;}
+.imgBg{background-image:url(../img/Capturafondo12.PNG);}
+h1{color:darkred;}
+h2{color:darkred;}
+p{color:white;}
+@media screen and (min-width:1024px){
+    ul{
+        display:flex;
+        flex-direction: row;
+    }
+    .flexRow{display:flex; flex-direction:row;}
+    .mgBottom{margin-bottom:50px;}
+    .mgTop{margin-top:50px;}
+    li{padding: 5px; margin: 5px;}
+    a{font-size: 20px; color:black;}
+    h4{font-size:20px;}
+    p{font-size: 20px; padding:5px; margin:5px; color:white;}
+    .imgFluid{width:100%; height:auto; }
+    .textAlingC{text-align:center;}
+    .jCSpaceBetween{justify-content:space-between;}
+    .padMar{padding:5px; margin:5px;}
+    .pdLeft{padding-left:400px;}
+    .pdRight{padding-right:400px;}
+    /* grid desktop */
+    .gridhome{
+        display:grid;
+        grid-template-columns:30% 40% 30% ;
+        grid-template-rows:auto auto auto auto;
+        grid-template-areas:
+        "header header header"
+        "section section section"
+        "main main main"
+        "footer footer footer";
+    }
+    header{grid-area:header;}
+    section{grid-area:section;}
+    main{grid-area:main;}
+    footer{grid-area:footer;}
+    .gridNosotros{
+        display:grid;
+        grid-template-columns:30% 40% 30%;
+        grid-template-rows:auto auto auto auto auto ;
+        grid-template-areas: 
+        "header header header"
+        "img img img"
+        "main main main"
+        "section section section"
+        "footer footer footer";
+    }
+    .img{grid-area:img;}
+    .gridProductos{
+        display:grid;
+        grid-template-columns:30% 40% 30%;
+        grid-template-rows:auto auto auto auto;
+        grid-template-areas: 
+        "header header header"
+        "imgProductos imgProductos imgProductos"
+        "main main main"
+        "footer footer footer";
+    }
+    .gridProductosMain{
+        display:grid;
+        grid-template-columns:50% 50%;
+        grid-template-rows:auto auto auto auto auto auto auto ;
+        grid-template-areas:
+        "medioArriba medioArriba"
+        "nameUpIzq nameUpDer"
+        "ImgArribaIzq ImgArribaDer"
+        "priceDownIzq priceDownDer"
+        "nameUpIzqA nameUpDerA"
+        "ImgAbajoIzq ImgAbajoDer"
+        "priceDownIzqA priceDownDerA" ;
+    }
+    .medioArriba{grid-area:medioArriba;}
+    .ImgArribaIzq{grid-area:ImgArribaIzq;}
+    .ImgAbajoIzq{grid-area:abajoIzq;}
+    .ImgArribaDer{grid-area:ImgArribaDer;}
+    .ImgAbajoDer{grid-area:abajoDer;}
+    .nameUpIzq{grid-area:nameUpIzq;}
+    .priceDownIzq{grid-area:priceDownIzq;}
+    .nameUpDer{grid-area:nameUpDer;}
+    .priceDownDer{grid-area:priceDownDer;}
+    .nameUpIzqA{grid-area:nameUpIzqA;}
+    .priceDownIzqA{grid-area:priceDownIzqA;}
+    .nameUpDerA{grid-area:nameUpDerA;}
+    .priceDownDerA{grid-area:priceDownDerA;}
+    .imgProductos{grid-area:imgProductos;}
+    .gridContactos{
+        display:grid;
+        grid-template-columns:30% 40% 30%;
+        grid-template-rows:auto auto auto auto;
+        grid-template-areas: 
+        "header header header"
+        "section section section"
+        "main main main"
+        "footer footer footer";
+    }
+    .gridServicios{
+        display:grid;
+        grid-template-columns:30% 40% 30%;
+        grid-template-rows:auto auto auto auto;
+        grid-template-areas: 
+        "header header header"
+        "section section section"
+        "main main main"
+        "footer footer footer";
+    }
+    .gridMnServicios{
+        display:grid;
+        grid-template-columns:50% 50%;
+        grid-template-rows:auto auto auto auto auto auto auto ;
+        grid-template-areas:
+        "medioArriba medioArriba" 
+        "nameUpIzq nameUpDer"
+        "ImgArribaIzq ImgArribaDer"
+        "priceDownIzq priceDownDer"
+        "nameUpIzqA nameUpDerA"
+        "ImgAbajoIzq ImgAbajoDer"
+        "priceDownIzqA priceDownDerA";
+    }
+    .gridVideosDeMuestra{
+        display:grid;
+        grid-template-columns:30% 40% 30%;
+        grid-template-rows:auto auto auto auto;
+        grid-template-areas:
+        "header header header"
+        "section section section"
+        "main main main"
+        "footer footer footer";
+    }
+    .gridMainVDM{
+        display:grid;
+        grid-template-columns:50% 50%;
+        grid-template-rows:auto auto auto;
+        grid-template-areas:
+        "medioArriba medioArriba" 
+        "arribaIzq arribaDer"
+        "abajoIzq abajoDer" ;
+    }
+    /* grid mobile */
+} 
+@media screen and (max-width:768px){
+    .mbTextAling{text-align:center;}
+    .mbMain, .mbFooter{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+    ul{display:flex; flex-direction:row; align-items:center;}
+    li{padding:2px; margin:2px;}
+    a{color:black;}
+    .mbPdR{padding-left:0;}
+    .mbFluidImg{width:100%; height:auto;}
+    .gridMobile{
+        display:grid;
+        grid-template-columns:100%;
+        grid-template-rows:auto auto auto auto;
+        grid-template-areas: 
+        "header"
+        "section"
+        "main"
+        "footer";
+    }
+    header{grid-area:header;}
+    section{grid-area:section;}
+    main{grid-area:main;}
+    footer{grid-area:footer;}
+    .pdLeft{padding-left:0;}
+    .gridMbN{
+        display:grid;
+        grid-template-columns:100%;
+        grid-template-rows:auto auto auto auto auto;
+        grid-template-areas: 
+        "header"
+        "img"
+        "main"
+        "section"
+        "footer";
+    }
+    .gridMbP{
+        display:grid;
+        grid-template-columns:100%;
+        grid-template-rows:auto auto auto auto;
+        grid-template-areas: 
+        "header"
+        "imgProductos"
+        "main"
+        "footer";
+    }
+    .gridMbContactos{
+        display:grid;
+        grid-template-columns:100%;
+        grid-template-rows:auto auto auto auto;
+        grid-template-areas: 
+        "header"
+        "section"
+        "main"
+        "footer";
+    }
+    .gridMbServicios{
+        display:grid;
+        grid-template-columns:100%;
+        grid-template-rows:auto auto auto auto;
+        grid-template-areas:
+        "header"
+        "section"
+        "main"
+        "footer";
+    }
+    .gridMbVDM{
+        display:grid;
+        grid-template-columns:100%;
+        grid-template-rows:auto auto auto auto;
+        grid-template-areas:
+        "header"
+        "section"
+        "main"
+        "footer";
+    }
+    .gridMbVDMMn{
+        display:grid;
+        grid-template-columns:100%;
+        grid-template-rows:auto auto auto auto;
+        grid-template-areas:
+        "medioArriba"
+        "arribaIzq"
+        "arribaDer"
+        "abajoIzq"
+        "abajoDer";
+    }
+}
